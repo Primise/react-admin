@@ -12,7 +12,7 @@ import './App.css';
 const ViewFour = loadable(() => import('./components/404'))
 const ViewFive = loadable(() => import('./components/500'))
 const Login = loadable(() => import( './views/Login/Login'))
-
+const Home = loadable(() => import( './views/Home/Home'))
 function App() {
   return (
     <div className="App">
@@ -22,6 +22,7 @@ function App() {
             <Route path='/404' component={ViewFour} />
             <Route path='/500' component={ViewFive} />
             <Route path='/login' component={Login} />
+            <Route path='/home' component={Home} />
             {/* <Route component={DefaultLayout} /> */}
         </Switch>
       </Router>
