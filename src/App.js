@@ -6,7 +6,7 @@ import './App.css';
 
 
 // 公共模块
-// const DefaultLayout = loadable(() => import( './containers'))
+const DefaultLayout = loadable(() => import( './containers'))
 
 // 基础页面
 const NotFound = loadable(() => import('./components/404'))
@@ -23,7 +23,7 @@ function App() {
             <Route path='/500' component={AuthError} />
             <Route path='/login' component={Login} />
             <Route path='/home' component={Home} />
-            {/* <Route component={DefaultLayout} /> */}
+            <Route component={DefaultLayout} />
         </Switch>
       </Router>
 

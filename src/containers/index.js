@@ -1,5 +1,5 @@
 
 
-import AppLayout from './App'
+import DefaultLayout from './App'
 
-export default AppLayout
+export default DefaultLayout
