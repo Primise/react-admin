@@ -9,19 +9,20 @@ import './App.css';
 // const DefaultLayout = loadable(() => import( './containers'))
 
 // 基础页面
-const ViewFour = loadable(() => import('./components/404'))
-const ViewFive = loadable(() => import('./components/500'))
+const NotFound = loadable(() => import('./components/404'))
+const AuthError = loadable(() => import('./components/500'))
 const Login = loadable(() => import( './views/Login/Login'))
-
+const Home = loadable(() => import( './views/Home/Home'))
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
           <Route exact path="/"  render={()=><Redirect to="/home/" push />} />
-            <Route path='/404' component={ViewFour} />
-            <Route path='/500' component={ViewFive} />
+            <Route path='/404' component={NotFound} />
+            <Route path='/500' component={AuthError} />
             <Route path='/login' component={Login} />
+            <Route path='/home' component={Home} />
             {/* <Route component={DefaultLayout} /> */}
         </Switch>
       </Router>

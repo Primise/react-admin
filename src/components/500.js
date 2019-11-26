@@ -1,4 +1,5 @@
 import React from 'react'
+
 import img from '@/assets/img/500.png'
 
 const ViewFive = () => (
