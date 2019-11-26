@@ -6,6 +6,7 @@ import zh_CN from "antd/es/locale/zh_CN"
 import {Provider} from 'react-redux'
 import store from './store'
 import './index.css';
+// import "antd/dist/antd.css"
 // import * as serviceWorker from './serviceWorker';
 
 
