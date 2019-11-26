@@ -6,7 +6,6 @@ import zh_CN from "antd/es/locale/zh_CN"
 import {Provider} from 'react-redux'
 import store from './store'
 import './index.css';
-// import * as serviceWorker from './serviceWorker';
 
 
 
@@ -18,4 +17,4 @@ const AppRoot = (
   </ConfigProvider>
 )
 ReactDOM.render(AppRoot, document.getElementById('root'));
-// serviceWorker.unregister();
+
